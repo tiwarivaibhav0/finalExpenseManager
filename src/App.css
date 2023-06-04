@@ -1,0 +1,135 @@
+.main {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+#title {
+  font-size: 250%;
+  font-family: cursive;
+  text-align: center;
+  color: #e53935;
+}
+.form {
+  margin-bottom: 20px;
+}
+
+.inp {
+  width: 100%;
+}
+
+.inp input[type="number"],
+.inp input[type="text"],
+.inp select,input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.inp select {
+  padding: 10px 30px 10px 10px;
+}
+
+.inp input[type="number"]:focus,
+.inp input[type="text"]:focus,
+.inp select:focus {
+  background-color: #e2e2e2;
+}
+
+.inp button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.inp button:hover {
+  background-color: #45a049;
+}
+
+.expenses {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.expenses h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.expenses th,
+.expenses td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.expenses th {
+  background-color: #f2f2f2;
+}
+
+.expenses tr:last-child td {
+  border-bottom: none;
+}
+
+.tbl {
+  margin-top: 20px;
+}
+
+.tbl button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tbl button:hover {
+  background-color: #e53935;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+.slide-up {
+  transition: transform 0.5s ease;
+}
+
+.slide-up:hover {
+  transform: translateY(-5px);
+}
+#actions {
+  display: flex;
+  gap: 10px;
+}
